@@ -1,0 +1,22 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block inner_content %}
+<h2 class="text-black allauth-mt text-center">Sign up.</h2>
+<hr class="hr-black">
+
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+  {{ form|crispy }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit" class="btn orange-btn text-white rounded">Sign up. &raquo;</button>
+</form>
+
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="cart-colour">sign in</a>.{% endblocktrans %}</p>
+
+{% endblock %}

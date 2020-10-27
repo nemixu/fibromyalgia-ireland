@@ -1,0 +1,27 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% comment %} {% include 'includes/head.html' %} {% endcomment %}
+    <title>{% block title %}{% endblock %}</title>
+
+   <title>fibromyalgia Ireland</title>
+  </head>
+  <body>
+    {% comment %} {% include 'includes/navbar.html'%}
+    {% include 'includes/mobile-nav-sidebar.html'%}
+    {% include 'includes/messages.html'%}
+      
+    {% block page_header %} {% endcomment %}
+    {% comment %} {% endblock %} {% endcomment %}
+
+    {% block content %}
+    {% endblock %}
+    {% comment %} {% include 'includes/footer.html'%}
+    {% block postloadjs %}
+    {% include 'includes/scripts.html'%} {% endcomment %}
+    {% comment %} {% endblock %} {% endcomment %}
+    
+  </body>
+</html>

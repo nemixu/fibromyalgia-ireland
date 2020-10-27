@@ -1,0 +1,13 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Hello from {{ site_name }}!
+
+Thank you for registering your account at DN Fitness, 
+
+before we get you setup we need you to follow the below link to verify your account.
+Your account name is: {{ user_display }}
+
+
+confirmation link: {{ activate_url }}
+{% endblocktrans %}
+{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Thank you from {{ site_name }}!
+{{ site_domain }}{% endblocktrans %}
+{% endautoescape %}

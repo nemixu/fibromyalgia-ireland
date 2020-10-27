@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container ">
+        <div class="white-overlay"></div>
+            <div class="row center-custom ">
+                <div class="col-sm-12 col-md-6 allauth-padding">
+                    <div class="allauth-form-inner-content">
+                        {% block inner_content %}
+
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+    </div>
+{% endblock %}
