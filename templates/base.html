@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% comment %} {% include 'includes/head.html' %} {% endcomment %}
+    {% include 'includes/head.html' %}
     <title>{% block title %}{% endblock %}</title>
 
    <title>fibromyalgia Ireland</title>
@@ -18,10 +18,10 @@
 
     {% block content %}
     {% endblock %}
-    {% comment %} {% include 'includes/footer.html'%}
+    {% comment %} {% include 'includes/footer.html'%} {% endcomment %}
     {% block postloadjs %}
-    {% include 'includes/scripts.html'%} {% endcomment %}
-    {% comment %} {% endblock %} {% endcomment %}
+    {% include 'includes/scripts.html'%} 
+    {% endblock %} 
     
   </body>
 </html>
