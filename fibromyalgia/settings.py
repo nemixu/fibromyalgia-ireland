@@ -26,7 +26,7 @@ SECRET_KEY = 'nv-wv-=d6!xt%iwx)vea%qdl=0ad5=p)0wws=2bes@ep%k%0qd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fibromyalgia-website.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['fibromyalgia-website.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
