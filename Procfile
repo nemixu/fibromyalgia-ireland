@@ -1,1 +1,1 @@
-web: gunicorn DN_fitness.wsgi:application
+web: gunicorn fibromyalgia.wsgi:application
