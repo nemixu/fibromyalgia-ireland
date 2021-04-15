@@ -1,0 +1,24 @@
+{% extends base.html %}
+{% block title %}Fibromyalgia Ireland | 400 {% endblock %}
+{% load static %}
+
+{% block content %} 
+
+    <div class="contact-success"></div>
+    <div class="container-fluid contact-container">
+        <section class="row">
+            <div class="col-12 pb-5">
+                <h2 class="text-white text-center display-1">OH NO!</h2>
+                <h3 class="text-white hero-sub-text text-center">Something went <span class="cart-colour">wrong</span> :</h3>
+           </div>
+        </section>
+        <section class="row">
+            <div class="col-12 pb-5 text-center">
+                <h3 class="text-white hero-sub-text text-center pb-2">head back to the <span class="cart-colour">homepage </span></h3>
+                <h4 class="text-white text-center pb-2">Error: 400 | Bad request. If the problem continues please <a class="text-white" href="{% url 'contact' %}">contact us</a></h4>
+                <h5 class="text-white text-center pb-2"><span class="cart-colour">DN</span> Fitness Team!</h5>
+                <a class="btn orange-btn text-white justify-content-center mt-3" aria-label="homebutton" href="{% url 'home' %}">Home</a>
+           </div>
+        </section>  
+    </div> 
+{% endblock %}
