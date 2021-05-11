@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:,300,400,500,');
 
-
-/*--Scroll behavior smooth used for slow and smooth transitions to other sections--*/
 html {
     scroll-behavior: smooth;
    }
