@@ -28,6 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['fibromyalgia-website.herokuapp.com', 'www.fibromyalgia.ie', 'fibromyalgia.ie', '127.0.0.1']
 
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
